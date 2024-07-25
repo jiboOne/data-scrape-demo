@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  datascrapedemo:
+    image: datascrapedemo:latest
+    build: .
+    ports:
+      - "8033:8033"
+    environment:
+      - WEB_DRIVER_ADDRESS=/usr/local/bin/chromedriver
